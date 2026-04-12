@@ -1,0 +1,24 @@
+body{
+    background: linear-gradient(orange, rgb(207, 71, 71), yellow,rgb(207, 71, 71)); min-height: 100vh;
+}
+a:hover{
+    color: aqua;
+}
+.pj{
+    text-align: center;
+    color: rgb(63, 45, 126);
+}
+.bola{
+    color:whitesmoke;
+    font-size: 18pt;
+}
+.rafa{
+    text-align: center;
+}
+.gst{
+    color:rgb(36, 35, 34);
+    text-align: center;
+}
+.white{
+    color: white;
+}
