@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.varela{
+    font-family: 'Press Start 2P', cursive;
+    
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+}
+
+body{
+    background: linear-gradient(rgb(35, 160, 35),rgb(54, 22, 1));
+    
+}
+
+.jogo{
+    width: 100%;
+    height: 500px;
+    border-bottom: 25px solid rgb(52, 197, 52);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB, #E0F6FF);
+    z-index: 1;
+}
+
+.clouds{
+    position: absolute;
+    width: 550px;
+    animation: clouds 20s linear infinite;
+}
+
+.pipe{
+    position: absolute;
+    width: 80px;
+    bottom: 0;
+    animation: pipe-animation 2s linear infinite;
+    z-index: 1;
+}
+
+.mario{
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    margin-left: 310px ;
+    
+}
+
+.mario-jump{
+    animation: mario-jump 500ms linear alternate;
+}
+
+.bowser{
+    position: absolute;
+    bottom: -35px;
+    z-index: 2;
+    overflow-y: visible;
+    width: 250px;
+    margin-left: 50px;
+}
+
+.bowser-jump{
+
+    animation: bowser-jump 0.8s linear alternate 
+}
+
+.peach{
+    position: absolute;
+    bottom: 0;
+    right: 120px;
+    z-index: 2;
+    width: 130px;
+    overflow-y: visible;
+    z-index: 1;
+    transform: scaleX(-1);
+}
+
+.bowserjr{
+    position: absolute;
+    top: 133px;
+    right: 120px;
+    z-index: 2;
+    width: 80px;
+    overflow-y: visible;
+    animation: bowserjr 15s infinite linear;
+    z-index: 2;
+}
+
+.coin{
+    height: 20px;
+    position: absolute;
+}
+
+
+@keyframes pipe-animation{
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes bowser-jump{
+   0% { bottom: 0px
+
+    }
+
+    40% {
+        bottom: 130px;
+    }
+
+
+    50% {
+        bottom: 140px;
+    }
+
+    60% {
+        bottom: 130px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+@keyframes mario-jump{
+    0% { bottom: 0px
+
+    }
+
+    40% {
+        bottom: 130px;
+    }
+
+
+    50% {
+        bottom: 140px;
+    }
+
+    60% {
+        bottom: 130px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+}
+
+@keyframes clouds{
+    from {
+        right: -550px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes bowserjr{
+    0% {
+        top: 133px;
+        right: 120px;
+    }
+
+    30% {
+        top: 80px;
+        right: 300px;
+    }
+
+    50% {
+        top: 270px;
+        right: 500px;
+    }
+
+    80% {
+        top: 100px;
+        right: 280px;
+    }
+
+    75% {
+        top: 193px;
+        right: 160px;
+    }
+
+    100% {
+        top: 133px;
+        right: 120px;
+    }
+
+    
+}
